@@ -14,20 +14,20 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.teal,
         accentColor: Colors.blueGrey,
         fontFamily: 'QuickSand',
-        // textTheme: ThemeData.light().textTheme.copyWith(
-        //         headline6: TextStyle(
-        //       fontFamily: 'OpenSans',
-        //       fontWeight: FontWeight.bold,
-        //       fontSize: 18,
-        //     )),
+        textTheme: TextTheme(
+            headline6: TextStyle(
+          fontFamily: 'OpenSans',
+          fontWeight: FontWeight.bold,
+          fontSize: 18,
+        )),
         appBarTheme: AppBarTheme(
-          textTheme: ThemeData.light().textTheme.copyWith(
-                headline6: TextStyle(
-                  fontFamily: 'OpenSans',
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
+          textTheme: TextTheme(
+            headline6: TextStyle(
+              fontFamily: 'OpenSans',
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
       home: MyHomePage(),

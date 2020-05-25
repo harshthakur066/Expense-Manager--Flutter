@@ -39,11 +39,7 @@ class TransactionList extends StatelessWidget {
                       margin: EdgeInsets.symmetric(vertical: 7),
                       child: Text(
                         transactions[index].title,
-                        style: TextStyle(
-                          fontFamily: 'OpenSans',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                        ),
+                        style: Theme.of(context).textTheme.headline6,
                       ),
                     ),
                     Text(
