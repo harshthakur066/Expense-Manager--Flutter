@@ -42,18 +42,18 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final List<Transaction> _userTransactions = [
-    Transaction(
-      id: 't1',
-      title: 'Netflix',
-      amount: 800,
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: 't2',
-      title: 'Books',
-      amount: 300,
-      date: DateTime.now(),
-    ),
+    // Transaction(
+    //   id: 't1',
+    //   title: 'Netflix',
+    //   amount: 800,
+    //   date: DateTime.now(),
+    // ),
+    // Transaction(
+    //   id: 't2',
+    //   title: 'Books',
+    //   amount: 300,
+    //   date: DateTime.now(),
+    // ),
   ];
 
   void _addNewTransaction(String txTitle, double txAmount) {
@@ -83,10 +83,6 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(
           'Expense Manager',
-          //   style: TextStyle(
-          //     fontFamily: 'OpenSans',
-          //     fontWeight: FontWeight.bold,
-          //   ),
         ),
         actions: <Widget>[
           IconButton(
