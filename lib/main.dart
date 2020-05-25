@@ -29,6 +29,8 @@ class MyHomePage extends StatelessWidget {
       date: DateTime.now(),
     ),
   ];
+  String titleInput;
+  String amountInput;
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +39,7 @@ class MyHomePage extends StatelessWidget {
         title: Text('Expense Manager'),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        // mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Container(
@@ -45,6 +47,29 @@ class MyHomePage extends StatelessWidget {
             child: Card(
               child: Text('Chart'),
               elevation: 10,
+            ),
+          ),
+          Card(
+            child: Container(
+              padding: EdgeInsets.all(10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: <Widget>[
+                  TextField(
+                    decoration: InputDecoration(labelText: 'Tiltle'),
+                    onChanged: (val) => {titleInput = val},
+                  ),
+                  TextField(
+                    decoration: InputDecoration(labelText: 'Tiltle'),
+                    onChanged: (val) => {amountInput = val},
+                  ),
+                  FlatButton(
+                    child: Text('Add Transaction'),
+                    textColor: Colors.purple,
+                    onPressed: () {},
+                  ),
+                ],
+              ),
             ),
           ),
           Column(
